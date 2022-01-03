@@ -1,0 +1,66 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- <div style="text-align: center">
+    <p>{{message}}</p>
+</div> -->
+<header>
+  <div class="wrapper">
+      <h1>Coupon Finder<span class="color">.</span></h1>
+      <nav>
+          <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/userlogin">Login</a></li>
+              <li><a href="#">Admin</a></li>
+              <li><a href="#">Contacts</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+
+<div class="bootstrap-wrapper">
+  <div class="container">
+      <div class="row ">
+          <div class="col-md-6 offset-md-3 text-xl-center">
+              <h1 id="head1">User Sign Up</h1>
+              <!-- <form class="frm" > -->
+                  <form  (ngSubmit)="signupUser()">
+
+                  <!-- <mat-form-field class="full" appearance="outline" style="width: 33%; padding: 9px;">
+                    <mat-label class="lab">Enter id</mat-label>
+                    <input type="text"  matInput required  name="t1" placeholder="id here" [(ngModel)]="user.id"  autocomplete="off" >
+                  </mat-form-field> -->
+
+
+                  <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                      <mat-label class="lab">Enter Full Name</mat-label>
+                      <input type="text"  matInput required  name="t1" placeholder="First Name Here" [(ngModel)]="user.fullname"  autocomplete="off" >
+                    </mat-form-field>
+
+                    <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                      <mat-label class="lab">Enter Email</mat-label>
+                      <input type="text" matInput  required  name="t2" placeholder="Middle Name Here" [(ngModel)]="user.email" autocomplete="off">
+                    </mat-form-field>
+
+                    <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                      <mat-label class="lab">Enter Username</mat-label>
+                      <input type="text" matInput required  name="t4" placeholder="Email Here" [(ngModel)]="user.userName" autocomplete="false">
+                    </mat-form-field>
+                    <input type="hidden" value="User">
+                    <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                      <mat-label class="lab">Enter password </mat-label>
+                      <input type="password" matInput required  name="t5" placeholder="Password Here" [(ngModel)]="user.password" autocomplete="off" >
+                    </mat-form-field>
+                    &nbsp;&nbsp;&nbsp;<button type="submit" mat-raised-button class="button-2" href="/userlogin">Sign Up</button>&nbsp;&nbsp;
+                    <button type="reset" mat-raised-button class="button-2">Reset</button><br><br>
+                    <hr>
+                    <h4>Already Have an Account</h4><a href="userlogin">Click Here</a>
+                  </form>
+
+          </div>
+      </div>
+  </div>
+</div>>

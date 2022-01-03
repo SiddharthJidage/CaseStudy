@@ -1,0 +1,89 @@
+/* .head2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-weight:bold;
+    font-family: sans-serif;
+} */
+/* .full
+{
+    width: 33%;
+} */
+
+/* .bt
+{
+    position: relative;
+    margin-left: 45%;
+} */
+form{
+    background: rgba(255,255,255,0.6);
+    border-radius: 6px;
+     /* background-color: brown; */
+     padding: 40px;
+     color: black;
+     /* background-color: brown; */
+}
+.button-2 {
+  border: 2px solid #02b8dd;
+  color: #02b8dd;
+  border-radius: 3px;
+  /* width: 100px;
+  height: 50px; */
+  font-size: 20px;
+  line-height: 50px;
+
+  margin-top: 10px;
+  width: 100%;
+  /* padding: 6px 0; */
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.button-2:hover {
+  background-color: #02dd14;
+  color: #fff;
+}
+
+/* form input{
+    color: black;
+} */
+
+
+/* header */
+header {
+  height: 120px;
+}
+header h1 {
+  float: left;
+  margin-top: 32px;
+}
+header h1 .color {
+  color: #02b8dd;
+}
+header nav {
+  float: right;
+}
+header nav ul li {
+  float: left;
+  display: inline-block;
+  margin-top: 50px;
+}
+header nav ul li a {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-right: 20px;
+}
+
+h1 {
+  font-family: 'Crete Round', serif;
+  font-weight: bold;
+  color: #444;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+

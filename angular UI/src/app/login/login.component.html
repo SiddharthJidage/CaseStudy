@@ -1,0 +1,42 @@
+
+
+<meta charset="utf-8" />
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+<div class="bootstrap-wrapper">
+    <div class='container mt'>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center"> </h1>
+
+
+                <form (ngSubmit)="onSubmit()">
+                  <h1 class="text-center">Login Here!!</h1>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input [(ngModel)]="credential.username" name="username" required type="text" matInput/>
+                    </mat-form-field>
+                    <br>
+
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input [(ngModel)]="credential.password" name="password" required type="password" matInput/>
+                    </mat-form-field>
+
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Login</button>
+                        <button type="redirect"routerLink="/usersignup" >signup</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

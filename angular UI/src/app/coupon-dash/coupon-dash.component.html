@@ -1,0 +1,61 @@
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <body>
+
+    <header>
+      <div class="wrapper">
+          <h1>Coupon Finder<span class="color">.</span></h1>
+          <nav>
+              <ul>
+                  <li><a href="/home">Home</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="#">Admin</a></li>
+                  <li><a href="/user">User Details</a></li>
+                  <li><a href="/addcoupon">Add Coupon</a></li>
+                  <li><a href="#">logout</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>provider</th>
+        <th>code</th>
+        <th>description</th>
+        <th>action</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coupon of coupons">
+        <td>{{coupon.id}}</td>
+        <td>{{coupon.provider}}</td>
+        <td>{{coupon.code}}</td>
+        <td>{{coupon.description}}</td>
+        <td><a>
+          <button  class="delete" class="btn btn-danger" (click)="deletCoupon(coupon.id)"> Delete</button>
+          <button  class="update" class="btn btn-success" ><a style="color: rgb(255, 255, 255);" href="/updatecoupon">update</a></button>
+        </a></td>
+
+
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+
+</body>

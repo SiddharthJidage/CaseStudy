@@ -1,0 +1,36 @@
+
+
+/* header */
+header {
+  height: 120px;
+}
+header h1 {
+  float: left;
+  margin-top: 32px;
+}
+header h1 .color {
+  color: #02b8dd;
+}
+header nav {
+  float: right;
+}
+header nav ul li {
+  float: left;
+  display: inline-block;
+  margin-top: 50px;
+}
+header nav ul li a {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-right: 20px;
+}
+
+h1 {
+  font-family: 'Crete Round', serif;
+  font-weight: bold;
+  color: #444;
+  font-size: 45px;
+  margin-bottom: 20px;
+}

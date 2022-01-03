@@ -1,0 +1,53 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 offset-md-3 text-center" id="div1">
+                <h1 class="head2">Admin Sign Up</h1>
+                    <form  (ngSubmit)="signupAdmin()">
+                    <mat-form-field class="full" appearance="outline" style="width: 33%; padding: 8px;">
+<!--
+                      <mat-label class="lab">Enter Id Name</mat-label>
+                      <input type="text"  matInput required  name="t1" placeholder="First Name Here" [(ngModel)]="admin.name" autocomplete="off" >
+                      </mat-form-field> -->
+
+                      <mat-label class="lab">Enter First Name</mat-label>
+                        <input type="text"  matInput required  name="t1" placeholder="First Name Here" [(ngModel)]="admin.fname" autocomplete="off" >
+                      </mat-form-field>
+
+                      <mat-form-field class="full" appearance="outline" style="width: 33%;padding: 8px;">
+                        <mat-label class="lab">Enter Middle Name</mat-label>
+                        <input type="text" matInput  required  name="t2" placeholder="Middle Name Here" [(ngModel)]="admin.mname"  autocomplete="off">
+                      </mat-form-field>
+
+                      <mat-form-field class="full" appearance="outline" style="width: 33%;padding: 8px;">
+                        <mat-label class="lab">Enter Last Name</mat-label>
+                        <input type="text" matInput required  name="t3" placeholder="Last Name Here" [(ngModel)]="admin.lname" autocomplete="off" >
+                      </mat-form-field>
+                      <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                        <mat-label class="lab">Enter Username</mat-label>
+                        <input type="text" matInput required  name="t4" placeholder="Email Here" [(ngModel)]="admin.username" autocomplete="false">
+                      </mat-form-field>
+
+                      <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                        <mat-label class="lab">Enter Email</mat-label>
+                        <input type="email" matInput required  name="t4" placeholder="Email Here" [(ngModel)]="admin.email" autocomplete="off">
+                      </mat-form-field>
+
+                             <!-- hidden input for role -->
+                      <!-- <input type="hidden" name="any" #hi ngModel value="User"> -->
+
+                      <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                        <mat-label class="lab">Enter password </mat-label>
+                        <input type="password" matInput required  name="t5" placeholder="Password Here" [(ngModel)]="admin.password" autocomplete="off" >
+                      </mat-form-field>
+                      &nbsp;&nbsp;&nbsp;<button type="submit" mat-raised-button class ="button-2" >Sign Up</button>&nbsp;&nbsp;
+                      <button type="reset" mat-raised-button class ="button-2">Reset</button><br><br>
+                       <hr>
+                       <h4>Already Have an Account</h4><a routerLink="/admin/admin-login">Click Here</a>
+                    </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br>

@@ -1,0 +1,56 @@
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+  <header>
+    <div class="wrapper">
+        <h1>Coupon Finder<span class="color">.</span></h1>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><button (onclick)= "logout()"> <a href="/home">logout</a> </button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div style="text-align: center;">
+  <h2>Expiry Date: {{edate}}</h2>
+  <h2>code:{{pcode}}</h2>
+</div>
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>provider</th>
+        <th>description</th>
+        <th>action</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coupon of coupon">
+        <td>{{coupon.provider}}</td>
+        <td>{{coupon.description}}</td>
+        <td>
+          <button type="button" id="myBtn" class="btn" style="background-color: #b48fc6;" (click)= updatepcode(coupon.code,coupon.expiryDate) data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            Show Code
+          </button>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+</body>

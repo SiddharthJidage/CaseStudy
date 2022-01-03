@@ -1,0 +1,71 @@
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        <!-- <div style="text-align: center">
+            <p>{{message}}</p>
+        </div> -->
+        <header>
+          <div class="wrapper">
+              <h1>Coupon Finder<span class="color">.</span></h1>
+              <nav>
+                  <ul>
+                      <li><a href="/home">Home</a></li>
+                      <li><a href="/userlogin">Login</a></li>
+                      <li><a href="#">Admin</a></li>
+                      <li><a href="#">Contacts</a></li>
+                  </ul>
+              </nav>
+          </div>
+        </header>
+
+
+        <div class="bootstrap-wrapper">
+          <div class="container">
+              <div class="row ">
+                  <div class="col-md-6 offset-md-3 text-xl-center">
+                      <h1 id="head1">update Coupon.</h1>
+                      <!-- <form class="frm" > -->
+                          <form  [formGroup]="formValue">
+
+                          <!-- <mat-form-field class="full" appearance="outline" style="width: 33%; padding: 9px;">
+                            <mat-label class="lab">Enter id</mat-label>
+                            <input type="text"  matInput required  name="t1" placeholder="id here" [(ngModel)]="user.id"  autocomplete="off" >
+                          </mat-form-field> -->
+
+
+                          <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                              <mat-label class="lab">Enter ID</mat-label>
+                              <input type="id" matInput required  name="t5" formControlName="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter id">
+                            </mat-form-field>
+
+                            <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                              <mat-label class="lab">Enter provider</mat-label>
+                              <input type="text" matInput required  name="t5" formControlName="provider" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter provider">
+                            </mat-form-field>
+
+                            <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                              <mat-label class="lab">Enter Code</mat-label>
+                              <input type="text" matInput required  name="t5" formControlName="code" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter code">
+                            </mat-form-field>
+
+                            <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                              <mat-label class="lab">Enter discription</mat-label>
+                              <input type="text"matInput required  name="t4" formControlName="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter description">
+                            </mat-form-field>
+
+                            <mat-form-field class="full" appearance="outline" style="width: 100%;">
+                              <mat-label class="lab">Enter ExpiryDate </mat-label>
+                              <input type="text" matInput required  name="t5" formControlName="expiryDate" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter expiryDate">
+                            </mat-form-field>
+                            &nbsp;&nbsp;&nbsp;<button type="submit" mat-raised-button class="button-2" (click)="addCoupon()">Add</button>&nbsp;&nbsp;
+                            <button type="reset" mat-raised-button class="button-2">Reset</button><br><br>
+
+                          </form>
+
+                  </div>
+              </div>
+          </div>
+        </div>>

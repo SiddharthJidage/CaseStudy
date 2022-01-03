@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+  <body>
+  <header>
+    <div class="wrapper">
+        <h1>Coupon Finder<span class="color">.</span></h1>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/userlogin">Login</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <tr>
+          <th>Name</th>
+          <th>email</th>
+          <th>username</th>
+          <!-- <th>password</th> -->
+          <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.fullname}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.userName}}</td>
+        <!-- <td>{{user.password}}</td> -->
+        <td class="text-center"><button class="btn btn-danger btn-xs" (click)="deleteUser(user.userName)"><span class="glyphicon glyphicon-remove">Delete</span></button></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+</body>
